@@ -2,14 +2,14 @@
 //fix this function:
 function startCounting()
 {
-	var counter = 100;
-	while(counter <= 100)
+	var counter = 10;
+	while(counter <= 0)
 	{
-		counter --;
+		counter++;
 		console.log(counter);
 	}
 	
 	return counter;
-}
+};
 
-startCounting();
+console.log (startCounting());

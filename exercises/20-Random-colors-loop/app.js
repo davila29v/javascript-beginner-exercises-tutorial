@@ -1,4 +1,4 @@
-function getColor(colorNumber=0)
+function getColor(colorNumber)
 {
 	//make sure parameter is a number and not a string by converting the value to int:
 	colorNumber = parseInt(colorNumber);
@@ -16,14 +16,21 @@ function getColor(colorNumber=0)
 	}
 }
 
-function getAllStudentColors(min, max) {
-  min = Math.ceil(1);
+function getAllStudentColors() 
+{
+   let i=0
+   while(i<10) {
+       i++;
+       let colorNumber = (Math.floor(Math.random() *4) +1);
+       let exampleColor = getColor (colorNumber);
+       console.log (exampleColor);
+   }
+}
+ /* min = Math.ceil(1);
   max = Math.floor(4);
   return Math.floor(Math.random() * (4 - 1 + 1) + 1); //The maximum is inclusive and the minimum is inclusive
 }
+*/
+getAllStudentColors();
 
-console.log(getAllStudentColors());
-	//your loop here
-}
-
-var exampleColor = getColor(1);
+//var exampleColor = getColor(1);

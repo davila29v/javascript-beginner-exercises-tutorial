@@ -2,16 +2,16 @@
 //fix this function:
 function startCounting()
 {
-	var counter = 0;
-    while(counter < 100)
+	var counter = 101;
+    while(counter > 0)
     {
-		counter++;
+		counter--;
         console.log (counter);
     }
-
+    return counter; 
 };
 
-console.log (startCounting())
+startCounting();
 
 
 

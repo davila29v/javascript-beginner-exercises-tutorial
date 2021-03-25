@@ -16,12 +16,14 @@ function getColor(colorNumber=0)
 	}
 }
 
-function getAllStudentColors(){
-	
-	//your loop here
-	var exampleColor = getColor(1);
+function getAllStudentColors(min, max) {
+  min = Math.ceil(1);
+  max = Math.floor(4);
+  return Math.floor(Math.random() * (4 - 1 + 1) + 1); //The maximum is inclusive and the minimum is inclusive
 }
 
-//call the function below with the number of students in the class and print on the console
-getAllStudentColors();
+console.log(getAllStudentColors());
+	//your loop here
+}
 
+var exampleColor = getColor(1);

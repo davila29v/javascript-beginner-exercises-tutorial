@@ -2,14 +2,17 @@
 //fix this function:
 function startCounting()
 {
-	var counter = 10;
-	while(counter <= 0)
-	{
+	var counter = 0;
+    while(counter < 100)
+    {
 		counter++;
-		console.log(counter);
-	}
-	
-	return counter;
+        console.log (counter);
+    }
+
 };
 
-console.log (startCounting());
+console.log (startCounting())
+
+
+
+//me falta el return counter para que este bueno
